@@ -1,0 +1,5 @@
+#div_index{position: relative; height: 100vh; padding-top: 30px;}
+#button_carga{padding: 40px; position: relative; top: 200px;}
+form{margin-top: 100px;}
+input, select{padding: 10px; margin-bottom: 20px;}
+input[type='submit']{display: block; width: 300px; margin-top: 50px;}

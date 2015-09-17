@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title>{% block title %} Desafio CargoBR {% endblock %}</title>
+    <link type="text/css" rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/boot.css' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    {% block content %}
+        <div id="div_index" class="center-box al-center bg-body">
+            <h1 class="fontsize3 font-light">Desafio para o cargo de analista jr. Django/Python da <a class="color-green" href="https://cargobr.com/">CARGOBR</a></h1>
+            <a id="button_carga" class="fontsize2 font-light btn-green" href="{% url 'cargaView' %}">Cadastre uma nova carga</a>
+            <h2 class="fontsize1b font-thin">Feito por Felipe Rampazzo</h2>
+        </div>
+    {% endblock %}
+</body>
+</html>

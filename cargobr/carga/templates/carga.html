@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block title %}Cadastro de Cargas{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="al-center fontsize2b font-normal color-green">{{ title }}</h1>
+        {% if form %}
+            <div class="content center-box fontsize2 font-light al-center">
+                <form method="POST" action="">{% csrf_token %}
+                    {{ form.as_p }}
+                    <input class="btn-green center-box" type="submit" alt="Cadastrar" value="Cadastrar" name="Cadastrar"/>
+                </form>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
